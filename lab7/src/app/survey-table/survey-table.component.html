@@ -1,0 +1,18 @@
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Age</th>
+      <th>Feedback</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let response of responses">
+      <td>{{ response.name }}</td>
+      <td>{{ response.email }}</td>
+      <td>{{ response.age }}</td>
+      <td>{{ response.feedback }}</td>
+    </tr>
+  </tbody>
+</table>

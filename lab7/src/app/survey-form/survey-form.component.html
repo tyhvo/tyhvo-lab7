@@ -1,0 +1,15 @@
+<form [formGroup]="surveyForm" (ngSubmit)="onSubmit()">
+  <label for="name">Name:</label>
+  <input id="name" formControlName="name" required>
+
+  <label for="email">Email:</label>
+  <input id="email" formControlName="email" required>
+
+  <label for="age">Age:</label>
+  <input id="age" formControlName="age" type="number" required>
+
+  <label for="feedback">Feedback:</label>
+  <textarea id="feedback" formControlName="feedback" required></textarea>
+
+  <button type="submit" [disabled]="surveyForm.invalid">Submit</button>
+</form>
