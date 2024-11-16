@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { SurveyService, SurveyResponse } from '../services/survey.service'; // Import the service
-import { CommonModule } from '@angular/common'; // Import CommonModule
+import { SurveyService, SurveyResponse } from '../services/survey.service'; 
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-survey-table',
   standalone: true,
-  imports: [CommonModule], // Add CommonModule to imports
+  imports: [CommonModule], 
   templateUrl: './survey-table.component.html',
   styleUrls: ['./survey-table.component.scss']
 })
